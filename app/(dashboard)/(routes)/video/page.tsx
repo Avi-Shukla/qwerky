@@ -51,7 +51,7 @@ const VideoPage = () => {
     <>
       <Heading
         title="Video Generation"
-        description="Turn your prompt into video."
+        description="Turn your prompt into video.(Videos might take sometime to generate)"
         icon={VideoIcon}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"

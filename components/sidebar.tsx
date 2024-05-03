@@ -28,32 +28,37 @@ const routes = [
   {
     label: "Conversation",
     icon: MessagesSquare,
-    href: "/conversation",
     color: "text-violet-500",
-  },
-  {
-    label: "Image Generation",
-    icon: ImageIcon,
-    href: "/image",
-    color: "text-pink-500",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    href: "/video",
-    color: "text-orange-700",
-  },
-  {
-    label: "Music Generation",
-    icon: Music,
-    href: "/music",
-    color: "text-emerald-500",
+    bgColor: "bg-violet-500/10",
+    href: "/conversation",
   },
   {
     label: "Code Generation",
     icon: Code,
-    href: "/code",
     color: "text-green-700",
+    bgColor: "bg-green-700/10",
+    href: "/code",
+  },
+  {
+    label: "Video Generation",
+    icon: VideoIcon,
+    color: "text-orange-700",
+    bgColor: "bg-orange-700/10",
+    href: "/video",
+  },
+  {
+    label: "Image Generation",
+    icon: ImageIcon,
+    color: "text-pink-700",
+    bgColor: "bg-pink-700/10",
+    href: "/image",
+  },
+  {
+    label: "Music Generation",
+    icon: Music,
+    color: "text-emerald-500",
+    bgColor: "bg-emerald-500/10",
+    href: "/music",
   },
   {
     label: "Settings",
@@ -62,18 +67,15 @@ const routes = [
   },
 ];
 
-interface SidebarProps{
-  apiLimitCount:number;
-  isPro:boolean;
-};
+interface SidebarProps {
+  apiLimitCount: number;
+  isPro: boolean;
+}
 
-const Sidebar = ({
-  apiLimitCount=0,
-  isPro=false,
-}) => {
+const Sidebar = ({ apiLimitCount = 0, isPro = false }) => {
   const pathname = usePathname();
   return (
-    <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white">
+    <div className="space-y-4 py-4 flex flex-col h-full bg-[#1a1716] text-white">
       <div className="px-3 py-2 flex-1">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
           <div className="relative w-14 h-20 mr-4 flex items-center justify-center">
@@ -110,10 +112,7 @@ const Sidebar = ({
           ))}
         </div>
       </div>
-      <FreeCounter
-      isPro={isPro}
-      apiLimitCount={apiLimitCount  }
-      />
+      <FreeCounter isPro={isPro} apiLimitCount={apiLimitCount} />
     </div>
   );
 };
