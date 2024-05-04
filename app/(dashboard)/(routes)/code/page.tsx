@@ -67,7 +67,7 @@ const CodePage = () => {
     <>
       <Heading
         title="Code Generation"
-        description="Our advanced code generative model."
+        description="Resolve your code error with our advance code bot."
         icon={Code}
         iconColor="text-green-700"
         bgColor="bg-green-700/10"

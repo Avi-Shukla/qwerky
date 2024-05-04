@@ -13,13 +13,7 @@ export const LandingHero = () => {
         <div className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-700">
           <TypewriterComponent
             options={{
-              strings: [
-                "Chatbot.",
-                "Image Generation.",
-                "Music Generation.",
-                "Audio Generation.",
-                "Code Generation.",
-              ],
+              strings: ["Chatbot.", "Image Generation.", "Code Generation."],
               autoStart: true,
               loop: true,
             }}

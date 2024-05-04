@@ -67,7 +67,7 @@ const ImagePage = () => {
     <>
       <Heading
         title="Image Generator"
-        description="Turn your prompt into an image."
+        description="Generate any image using our image generation AI."
         icon={ImageIcon}
         iconColor="text-pink-700"
         bgColor="bg-pink-700/10"
